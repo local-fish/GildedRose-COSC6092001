@@ -1,0 +1,7 @@
+# Gradle
+.gradle/
+build/
+
+# Compiled Java
+*.class
+*.jar
