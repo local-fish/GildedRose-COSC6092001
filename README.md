@@ -5,6 +5,11 @@ This repo is a refactor of the [Gilded Rose](https://github.com/emilybache/Gilde
 
 We also decided to use the project specification to implement the conjured items, which resulted in us creating 2 tests, one without the conjured item implementation to show feature parity, and one with the conjured item implementation to adhere to the project specification.
 
+## Directories of Interest
+- `./src/main` Contains the newly refactored version of the code, including the implementation for conjured items
+- `./src/old` Contains the old version of the code, provided as reference
+- `./src/test` Contains the text-based fixture files to be used to test the code. Do note that the files have been modified (to allow for proper subclass assignment) and will not work on the old version of the code. The output of the old version is stored in `expected-out.txt`
+
 ## Running this Repo
 If you are on NixOS and use flakes, the simplest way to run is to run `nix develop` and then run the `./run-nix.sh` script. This will automatically generate 2 text files and diff them with the expected result.
 
